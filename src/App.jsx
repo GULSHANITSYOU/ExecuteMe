@@ -1,12 +1,19 @@
+import { Nav } from "./components"
 
 
 function App() {
 
 
   return (
-    <>
-      <h1>Hello bhai wellcome</h1>
-    </>
+    <main className="w-full h-screen ">
+      <Nav></Nav>
+      
+      {/* Hero section */}
+      <section className="max-container">
+
+      </section>
+     
+    </main>
   )
 }
 
