@@ -1,5 +1,10 @@
 import React from "react";
-import {vitenavlogo} from "../assets";
+import { vitenavlogo } from "../assets";
+import SearchButton from "./SearchButton";
+import { links } from "../constants";
+import { IoLanguageOutline } from "react-icons/io5";
+import ToggleButton from "./ToggleButton";
+
 
 const Nav = () => {
   return (
@@ -7,13 +12,31 @@ const Nav = () => {
       <div className=" w-[1380px] h-full mx-auto flex flex-1 justify-between items-center">
         {/* search logo container */}
         <div className="flex h-full items-center justify-start gap-4">
-            <a href="/" className="flex gap-2">
-            <img src={vitenavlogo} alt="vite nav logo" width={23} height={23}  />
-            <h3 className="font-semibold">Vite</h3>
-            </a>
-            <button>
-                
-            </button>
+          <a href="/" className="flex gap-2">
+            <img src={vitenavlogo} alt="vite nav logo" width={23} height={23} />
+            <h3 className="font-semibold dark:text-slate-200">Vite</h3>
+          </a>
+
+          {/* search button */}
+          <SearchButton />
+        </div>
+
+        
+
+        {/* Links section */}
+        <div className="h-full flex gap-4 items-center">
+          <ul className="h-full flex  items-center gap-4 text-[0.9rem] text-slate-600 dark:text-slate-200 font-medium">
+            {links.NavLinks.map(({lable,href})=>(
+              <li className="hover:text-[#7a7ece] transition-[300ms]" key = {lable}><a href={href}>{lable}</a></li>
+            ))}
+            <li>Resource</li>
+            <li>Version</li>
+            <li><div className="border-l-2 border-slate-300 h-6  w-1"></div></li>
+            <li className="font-bold text-[1rem]"><IoLanguageOutline /></li>            
+            <li><div className="border-l-[1px] border-slate-300 h-6  w-1"></div></li>
+            <li className="h-full items-center flex"><ToggleButton/></li>
+            <li><div className="border-l-2 border-slate-300 h-6  w-1"></div></li>
+          </ul>
         </div>
       </div>
     </nav>

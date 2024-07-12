@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <main className="w-full h-screen ">
+    <main className="w-full h-screen dark:bg-main bg-white">
       <Nav></Nav>
       
       {/* Hero section */}
