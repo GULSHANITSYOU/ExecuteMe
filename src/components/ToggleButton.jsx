@@ -3,12 +3,12 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { LuMoon } from "react-icons/lu";
 
 const ToggleButton = () => {
-  const [theme, setTheme] = useState(true);
+  const [theme, setTheme] = useState(false);
   const handalclick = () => {
     setTheme((prev) => !prev);    
   };
   return (
-    <button
+    <div
       type="checkbox"
       onClick={handalclick}
       className={`h-[1.4rem] relative  hover:border-[#7a7ece] dark:bg-[#272a30] w-11 rounded-xl p-2  bg-[#eff0f3] flex items-center  border border-slate-500`}>
@@ -21,7 +21,7 @@ const ToggleButton = () => {
       ? document.querySelector("#root").classList.remove("dark")
       : document.querySelector("#root").classList.add("dark")}
       </div>
-    </button>
+    </div>
   );
 };
 

@@ -14,5 +14,11 @@ export  const links = {
             lable:"Plugins",
             href:"/"        
         }
+    ],
+
+    SocialLinks: [
+        {
+            lable : "zone"
+        }
     ]
 }
