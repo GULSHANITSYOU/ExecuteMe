@@ -26,3 +26,11 @@
         @apply bg-[#1b1b1f]
     }
   }
+
+  
+  .resource:hover + .abc{
+    display: block;
+  }
+  .abc:hover{
+    display: block;
+  }

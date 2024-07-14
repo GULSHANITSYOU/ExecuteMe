@@ -1,24 +1,16 @@
-
-
-export  const links = {
-    NavLinks : [
-        {
-            lable: "Guide" ,
-            href : "/"
-        },
-        {
-            lable: "Config",
-            href:"/"
-        },
-        {
-            lable:"Plugins",
-            href:"/"        
-        }
-    ],
-
-    SocialLinks: [
-        {
-            lable : "zone"
-        }
-    ]
-}
+export const links = {
+  NavLinks: [
+    {
+      lable: "Guide",
+      href: "/",
+    },
+    {
+      lable: "Config",
+      href: "/",
+    },
+    {
+      lable: "Plugins",
+      href: "/",
+    },
+  ],
+};
