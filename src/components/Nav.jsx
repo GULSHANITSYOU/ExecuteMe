@@ -39,7 +39,7 @@ const Nav = () => {
               Resource
               <MdKeyboardArrowDown />
             </li>
-              <div className="abc  mx-[5rem] top-12  absolute  w-96 hidden h-96 bg-white"></div>
+              <div className="abc mx-[5rem] top-12  absolute  w-96 hidden h-96 bg-white"></div>
             <li className="flex items-center gap-[0.4rem] hover:text-[#868992] transition-all duration-150 cursor-pointer">
               Version
               <MdKeyboardArrowDown />
