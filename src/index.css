@@ -27,10 +27,13 @@
     }
   }
 
-  
-  .resource:hover + .abc{
-    display: block;
+  .droppdown{
+    display:none;
   }
-  .abc:hover{
-    display: block;
-  }
+ .hov:hover +.droppdown{
+  display: block;
+ }
+
+ .droppdown:hover{
+  display: block;
+ }

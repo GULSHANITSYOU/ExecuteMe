@@ -12,8 +12,8 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Nav = () => {
   return (
-    <nav className="h-14 bg-transparent z-10">
-      <div className=" w-[1380px] h-full mx-auto flex flex-1 justify-between items-center">
+    <nav className="h-14 bg-transparent w-full z-10">
+      <div className=" w-[95%] h-full mx-auto flex flex-1 justify-between items-center">
         {/* search logo container */}
         <div className="flex h-full items-center justify-start gap-4">
           <a href="/" className="flex gap-2">
@@ -35,11 +35,18 @@ const Nav = () => {
                 <a href={href}>{lable}</a>
               </li>
             ))}
-            <li className="flex   items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer resource">
-              Resource
-              <MdKeyboardArrowDown />
-            </li>
-              <div className="abc mx-[5rem] top-12  absolute  w-96 hidden h-96 bg-white"></div>
+
+            <div className=" dropDown relative h-full">
+              <li className="flex   hov items-center  gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
+                Resource
+                <MdKeyboardArrowDown />
+              </li>
+
+              <div className="absolute right-0 top-[100%]   droppdown h-96 flex justify-center items-center">
+                Radha ! 💌
+              </div>
+            </div>
+
             <li className="flex items-center gap-[0.4rem] hover:text-[#868992] transition-all duration-150 cursor-pointer">
               Version
               <MdKeyboardArrowDown />
