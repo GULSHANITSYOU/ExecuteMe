@@ -35,7 +35,7 @@ const Nav = () => {
                 <a href={href}>{lable}</a>
               </li>
             ))}
-            <li className="flex  items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer resource">
+            <li className="flex   items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer resource">
               Resource
               <MdKeyboardArrowDown />
             </li>
