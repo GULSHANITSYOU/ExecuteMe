@@ -37,7 +37,7 @@ const Nav = () => {
             ))}
 
             <div className=" dropDown relative h-full">
-              <li className="flex   hov items-center  gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
+              <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
                 Resource
                 <MdKeyboardArrowDown />
               </li>
