@@ -43,7 +43,7 @@ const Nav = () => {
               </li>
 
               <div className="absolute right-0 top-[100%]   droppdown h-96 flex justify-center items-center">
-                Radha ! 💌
+               💌 Radha ! 💌
               </div>
             </div>
 
