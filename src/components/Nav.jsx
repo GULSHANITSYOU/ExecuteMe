@@ -27,7 +27,7 @@ const Nav = () => {
 
         {/* Links section */}
         <div className="h-full flex gap-4 items-center">
-          <ul className="h-full  flex  items-center gap-4 text-[0.9rem] text-slate-600 dark:text-slate-200 font-medium">
+          <ul className="h-full  flex  items-center gap-5 text-[0.9rem] text-slate-600 dark:text-slate-200 font-medium">
             {links.NavLinks.map(({ lable, href }) => (
               <li
                 className="hover:text-[#7a7ece] transition-[300ms]"
@@ -38,19 +38,37 @@ const Nav = () => {
 
             <div className=" dropDown relative h-full">
               <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
-                Resource
+                Resources
                 <MdKeyboardArrowDown />
               </li>
 
-              <div className="absolute right-0 top-[100%]   droppdown h-96 flex justify-center items-center">
-               💌 Radha ! 💌
+              <div className="absolute  right-0 top-[100%] w-[180%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
               </div>
             </div>
 
-            <li className="flex items-center gap-[0.4rem] hover:text-[#868992] transition-all duration-150 cursor-pointer">
-              Version
-              <MdKeyboardArrowDown />
-            </li>
+            <div className=" dropDown relative h-full">
+              <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
+                Version
+                <MdKeyboardArrowDown />
+              </li>
+
+              <div className="absolute  right-0 top-[100%] w-[180%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+                     <div>Radha ! 💌</div>
+              </div>
+            </div>
             <li>
               <div className="border-l-2  dark:border-[#303035] border-slate-300 h-6  w-1"></div>
             </li>
