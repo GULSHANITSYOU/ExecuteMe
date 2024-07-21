@@ -26,7 +26,7 @@ const Nav = () => {
         </div>
 
         {/* Links section */}
-        <div className="h-full flex gap-4 items-center">
+        <div className="h-full  flex gap-4 items-center">
           <ul className="h-full  flex  items-center gap-5 text-[0.9rem] text-slate-600 dark:text-slate-200 font-medium">
             {links.NavLinks.map(({ lable, href }) => (
               <li
@@ -42,14 +42,24 @@ const Nav = () => {
                 <MdKeyboardArrowDown />
               </li>
 
-              <div className="absolute  right-0 top-[100%] w-[180%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
+              <div className="absolute  font-semibold right-0 top-[95%] w-[185%] bg-white  dark:bg-[#202127] shadow-xl   rounded-lg   droppdown  flex justify-center items-center">
+                <ul className="flex flex-col gap-3  py-4  px-5">
+                  {links.Resources.Document.map((link) => (
+                    <li key={link.lable}>
+                      <a href={link.src}>{link.lable}</a>
+                    </li>
+                  ))}
+                </ul>
+
+                <hr className="w-full   left-0  dark:border-[#343437]" />
+
+                <ul className="flex flex-col gap-3  py-4  px-5">
+                  {links.Resources.social.map((link) => (
+                    <li key={link.lable}>
+                      <a href={link.src}>{link.lable}</a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
@@ -60,21 +70,33 @@ const Nav = () => {
               </li>
 
               <div className="absolute  right-0 top-[100%] w-[180%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
-                     <div>Radha ! 💌</div>
+                <ul className="flex flex-col gap-2.5 font-semibold">
+                  {links.versions.map((link)=>(
+                    <li key={link.lable}><a href={link.src}>{link.lable}</a></li>
+                  ))}
+                </ul>
               </div>
             </div>
             <li>
               <div className="border-l-2  dark:border-[#303035] border-slate-300 h-6  w-1"></div>
             </li>
-            <li className="font-bold text-[1.1rem]">
+
+            <div className=" dropDown relative h-full ">
+            <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
               <IoLanguageOutline />
+              <MdKeyboardArrowDown />
             </li>
+
+              <div className="absolute  right-0 top-[100%] w-[360%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
+                <ul className="flex flex-col gap-2.5 ">
+                  <li  className="font-semibold">English</li>
+                  {links.versions.map((link)=>(
+                    <li key={link.lable}><a href={link.src}>{link.lable}</a></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            
             <li>
               <div className="border-l-[1px]  dark:border-[#303035] border-slate-300 h-6  w-1"></div>
             </li>
