@@ -9,6 +9,7 @@ import { FaDiscord } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const Nav = () => {
   return (
@@ -55,8 +56,11 @@ const Nav = () => {
 
                 <ul className="flex flex-col gap-3  py-4  px-5">
                   {links.Resources.social.map((link) => (
-                    <li key={link.lable}>
+                    <li className="flex items-center gap-1" key={link.lable}>
                       <a href={link.src}>{link.lable}</a>
+                      <div className="text-[#7c7d86]">
+                        <RiArrowRightUpLine />
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -69,34 +73,45 @@ const Nav = () => {
                 <MdKeyboardArrowDown />
               </li>
 
-              <div className="absolute  right-0 top-[100%] w-[180%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
+              <div className="absolute  right-0 top-[100%] w-[191%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
                 <ul className="flex flex-col gap-2.5 font-semibold">
-                  {links.versions.map((link)=>(
-                    <li key={link.lable}><a href={link.src}>{link.lable}</a></li>
+                  {links.versions.map((link) => (
+                    <li className="flex items-center gap-1" key={link.lable}>
+                      <a href={link.src}>{link.lable}</a>
+                      <div className="text-[#7c7d86]">
+                        <RiArrowRightUpLine />
+                      </div>
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
+
             <li>
               <div className="border-l-2  dark:border-[#303035] border-slate-300 h-6  w-1"></div>
             </li>
 
             <div className=" dropDown relative h-full ">
-            <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
-              <IoLanguageOutline />
-              <MdKeyboardArrowDown />
-            </li>
+              <li className="flex   hov items-center gap-[0.4rem] h-full  hover:text-[#868992] transition-all duration-150 cursor-pointer ">
+                <IoLanguageOutline />
+                <MdKeyboardArrowDown />
+              </li>
 
               <div className="absolute  right-0 top-[100%] w-[360%] bg-white  py-4  px-5 dark:bg-[#202127] shadow-lg  rounded-md droppdown  flex justify-center items-center">
                 <ul className="flex flex-col gap-2.5 ">
-                  <li  className="font-semibold">English</li>
-                  {links.versions.map((link)=>(
-                    <li key={link.lable}><a href={link.src}>{link.lable}</a></li>
+                  <li className="font-semibold">English</li>
+                  {links.languages.map((link) => (
+                    <li className="flex items-center gap-1" key={link.lable}>
+                      <a href={link.src}>{link.lable}</a>
+                      <div className="text-[#7c7d86]">
+                        <RiArrowRightUpLine />
+                      </div>
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
-            
+
             <li>
               <div className="border-l-[1px]  dark:border-[#303035] border-slate-300 h-6  w-1"></div>
             </li>

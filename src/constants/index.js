@@ -14,69 +14,95 @@ export const links = {
     },
   ],
 
-  Resources:{
-    Document : [
+  Resources: {
+    Document: [
       {
-        lable : 'Team',
-        src : '/'
+        lable: "Team",
+        src: "/",
       },
       {
         lable: "Blog",
-        src : "/"
+        src: "/",
       },
       {
-        lable : "Releases",
-        src : "/"
-      }
+        lable: "Releases",
+        src: "/",
+      },
     ],
-    social:[
+    social: [
       {
-        lable : "Mastodon",
-        src : '/'
+        lable: "Mastodon",
+        src: "/",
       },
       {
-        lable:"Twitter",
-        src:"/"
+        lable: "Twitter",
+        src: "/",
       },
       {
-        lable:"Discord chate",
-        src :"/"
+        lable: "Discord chate",
+        src: "/",
       },
       {
-        lable : "Awsome Vite",
-        src : "/"
+        lable: "Awsome Vite",
+        src: "/",
       },
       {
-        lable:"ViteConf",
-        src : '/'
+        lable: "ViteConf",
+        src: "/",
       },
       {
-        lable: 'DEV Community',
-        src : "/"
+        lable: "DEV Community",
+        src: "/",
       },
       {
-        lable:"Changelog",
-        src : "/"
+        lable: "Changelog",
+        src: "/",
       },
       {
-        lable : "Contributing", 
-        src:"/"
-      }
-    ]
+        lable: "Contributing",
+        src: "/",
+      },
+    ],
   },
 
-  versions:[
+  versions: [
     {
-      lable:"Vite 4 Docs",
+      lable: "Vite 4 Docs",
+      src: "/",
+    },
+    {
+      lable: "Vite 3 Docs",
+      src: "/",
+    },
+    {
+      lable: "Vite 1 Docs",
+      src: "/",
+    },
+  ],
+  languages: [
+    {
+      lable: "한국어",
+      src: "/",
+    },
+    {
+      lable: "语言是用",
+      src: "/",
+    },
+    {
+      lable: "Espagnol",
+      src: "/",
+    },
+    {
+      lable:"Português",
+      src : "/"
+    },
+    {
+      lable:"葡萄牙語",
       src:"/"
     },
     {
-      lable:"Vite 3 Docs",
+      lable:'Nederlands',
       src:'/'
-    },
-    {
-      lable:"Vite 1 Docs",
-      src:"/"
     }
-  ]
+  ],
 };
